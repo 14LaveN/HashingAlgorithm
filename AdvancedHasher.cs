@@ -36,8 +36,7 @@ public static class AdvancedHasher
             hash ^= chunk;
             hash *= prime3;
 
-            // Нелинейное преобразование
-            hash ^= ModularPower(chunk, prime4, prime5);
+            hash ^= (chunk << 17) | (chunk >> 47);
             hash *= prime4;
         }
 
@@ -53,22 +52,22 @@ public static class AdvancedHasher
     }
 
     // Модульное возведение в степень для нелинейности
-    private static ulong ModularPower(ulong baseValue, ulong exponent, ulong modulus)
-    {
-        ulong result = 1;
-        baseValue %= modulus;
-
-        while (exponent > 0)
-        {
-            if ((exponent & 1) == 1)
-            {
-                result = result * baseValue % modulus;
-            }
-
-            exponent >>= 1;
-            baseValue = (baseValue * baseValue) % modulus;
-        }
-
-        return result;
-    }
+    //TODO private static ulong ModularPower(ulong baseValue, ulong exponent, ulong modulus)
+    //TODO {
+    //TODO     ulong result = 1; 
+    //TODO     baseValue %= modulus;
+//TODO 
+    //TODO     while (exponent > 0)
+    //TODO     {
+    //TODO         if ((exponent & 1) == 1)
+    //TODO         {
+    //TODO             result = result * baseValue % modulus;
+    //TODO         }
+//TODO 
+    //TODO         exponent >>= 1;
+    //TODO         baseValue = (baseValue * baseValue) % modulus;
+    //TODO     }
+//TODO 
+    //TODO     return result;
+    //TODO }
 }

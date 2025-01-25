@@ -1,0 +1,5 @@
+G:\DotNetProjects\HashingAlgorithm\HashingAlgorithm\bin\Release\net9.0\win-x64\publish\HashingAlgorithm.pdb
+G:\DotNetProjects\HashingAlgorithm\HashingAlgorithm\bin\Release\net9.0\win-x64\publish\amd64\KernelTraceControl.dll
+G:\DotNetProjects\HashingAlgorithm\HashingAlgorithm\bin\Release\net9.0\win-x64\publish\amd64\msdia140.dll
+G:\DotNetProjects\HashingAlgorithm\HashingAlgorithm\bin\Release\net9.0\win-x64\publish\capstone.dll
+G:\DotNetProjects\HashingAlgorithm\HashingAlgorithm\bin\Release\net9.0\win-x64\publish\HashingAlgorithm.exe
