@@ -50,24 +50,4 @@ public static class AdvancedHasher
 
         return hash;
     }
-
-    // Модульное возведение в степень для нелинейности
-    //TODO private static ulong ModularPower(ulong baseValue, ulong exponent, ulong modulus)
-    //TODO {
-    //TODO     ulong result = 1; 
-    //TODO     baseValue %= modulus;
-//TODO 
-    //TODO     while (exponent > 0)
-    //TODO     {
-    //TODO         if ((exponent & 1) == 1)
-    //TODO         {
-    //TODO             result = result * baseValue % modulus;
-    //TODO         }
-//TODO 
-    //TODO         exponent >>= 1;
-    //TODO         baseValue = (baseValue * baseValue) % modulus;
-    //TODO     }
-//TODO 
-    //TODO     return result;
-    //TODO }
 }
